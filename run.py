@@ -3,10 +3,11 @@ import random
 rows = 5
 columns = 6
 
-class Game:
+class Board:
     """
-    This is the battleship game. 
-    A player will be playing against the computer
+    This is the main board. This class sets the number of ships, 
+    it allows the player to play against the computer. 
+    
     """
     def get_player_name():
         pass
