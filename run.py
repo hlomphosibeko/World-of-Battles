@@ -9,8 +9,14 @@ class Board:
     it allows the player to play against the computer. 
     
     """
-    def get_player_name():
-        pass
+    def __init__(self, size, board, num_ships, name, type):
+        self.size = size
+        self.board = [["." for x in range(size)] for y in range(size)]
+        self.num_ships = num_ships
+        self.type = type
+        self.guesses = []
+        self.ships = []
+
 
 
     def random_pick():
