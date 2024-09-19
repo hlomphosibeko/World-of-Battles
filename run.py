@@ -38,6 +38,13 @@ class Board:
         player1_name = input("Please insert your name:\n")
         print("_"*35)
 
+        player1_board = Board(size, num_ships, player1_name, type="player1")
+        computer_board = Board(size, num_ships, player1_name, type="computer")
+
+        for _ in range(num_ships):
+            populate_board(player1_board)
+            populate_board(computer_board)
+        play_game(computer_board, player1_board)
 
         self.print()
 
