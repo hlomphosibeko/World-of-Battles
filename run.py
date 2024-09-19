@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 rows = 5
 columns = 6
