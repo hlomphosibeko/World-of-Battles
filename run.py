@@ -17,24 +17,9 @@ class Board:
         self.guesses = []
         self.ships = []
 
+    def print(self):
+        for row in self.board:
+            print("".join(row))
 
-    def game_reload():
-        """
-        This function reloads a new game. It resets the board size and 
-        the position of the ships
-        """  
-        size = 7
-        num_ships = 5
-        scores["computer"] = 0
-        scores["player"] = 0
-        #print("-" * 35)
-        print("Welcome to WORLD OF BATTLES!!")
-       
 
-    def play_again():
-        pass
     
-
-
-    play_again()
-
