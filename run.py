@@ -22,6 +22,14 @@ class Board:
             print("".join(row))
 
 
+    def present_board():
+        """
+        Chooses random row and random column to position the ship.
+        """
+        x = random_point(10)
+        y = random_point(10)
+        board.add_ship(x, y)
+
     def new_game(self):
         """
         Start a new game. Sets the board size and number of ships, resets the scores and initialises the boards.
@@ -42,8 +50,8 @@ class Board:
         computer_board = Board(size, num_ships, player1_name, type="computer")
 
         for _ in range(num_ships):
-            populate_board(player1_board)
-            populate_board(computer_board)
+            present_board(player1_board)
+            present_board(computer_board)
         play_game(computer_board, player1_board)
 
         self.print()
