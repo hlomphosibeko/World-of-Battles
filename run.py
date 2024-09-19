@@ -1,5 +1,6 @@
 from random import randint
 
+scores = {"player1": 0, "computer": 0}
 rows = 5
 columns = 6
 
