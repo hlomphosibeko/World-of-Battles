@@ -26,8 +26,19 @@ class Board:
         """
         Start a new game. Sets the board size and number of ships, resets the scores and initialises the boards.
         """
-        
-        print("Welcome to Battleship")
+        size = 10
+        num_ships = 5
+        scores["player1"] = 0
+        scores["computer"] = 0
+        print("_"*35)
+        print("Welcome to my WORLD OF BATTLES!!")
+        print(f"Board size {size}, Number of ships: {num_ships}")
+        print("Top left corner is row: 0, col: 0")
+        print("_"*35)
+        player1_name = input("Please insert your name:\n")
+        print("_"*35)
+
+
         self.print()
 
 
