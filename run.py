@@ -22,4 +22,16 @@ class Board:
             print("".join(row))
 
 
+    def new_game(self):
+        """
+        Start a new game. Sets the board size and number of ships, resets the scores and initialises the boards.
+        """
+        
+        print("Welcome to Battleship")
+        self.print()
+
+
     
+    
+board = Board(10, 2, 'sean', 'hard')
+board.new_game()
