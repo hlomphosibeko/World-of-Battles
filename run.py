@@ -30,6 +30,19 @@ class Board:
         y = random_point(10)
         board.add_ship(x, y)
 
+    def revelling(computer_board, player1_board):
+        """
+        Playing the game.
+        """
+        for i in range(10):
+            print(f"{player1_board.name}'s Board")
+            player1_board.print()
+            print(f"{computer_board.name}'s Board")
+            computer_board.print()
+            results = make_guess(computer_board)
+            print(f"{player1_board.name} guessed: {computer_board.guesses[-1]}")
+            print(f"{player1_board.name} {results}ed!!!")
+
     def new_game(self):
         """
         Start a new game. Sets the board size and number of ships, resets the scores and initialises the boards.
