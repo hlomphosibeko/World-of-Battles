@@ -28,6 +28,9 @@ class Board:
         """
         return randint(0, size - 1)
 
+    def valid_coordinates(x, y, board):
+        
+
     def present_board():
         """
         Chooses random row and random column to position the ship.
