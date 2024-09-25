@@ -30,6 +30,11 @@ class Board:
         y = random_point(10)
         board.add_ship(x, y)
 
+    def make_guess(board):
+        """
+        Processes the guesses. If it's a computer guess, it picks a random row and random column. It it's a player guess, it then prompts for input.
+        """
+
     def revelling(computer_board, player1_board):
         """
         Playing the game.
