@@ -22,6 +22,12 @@ class Board:
             print("".join(row))
 
 
+    def random_point(size):
+        """
+        Helper function to return a random integer between 0 and size
+        """
+        return randint(0, size - 1)
+
     def present_board():
         """
         Chooses random row and random column to position the ship.
@@ -29,6 +35,8 @@ class Board:
         x = random_point(10)
         y = random_point(10)
         board.add_ship(x, y)
+
+
 
     def make_guess(board):
         """
@@ -50,6 +58,7 @@ class Board:
             y = random_point(5)
         board.guess(x, y)
         return board.guess(x, y)
+
 
     def revelling(computer_board, player1_board):
         """
