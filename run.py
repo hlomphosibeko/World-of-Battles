@@ -42,6 +42,11 @@ class Board:
             results = make_guess(computer_board)
             print(f"{player1_board.name} guessed: {computer_board.guesses[-1]}")
             print(f"{player1_board.name} {results}ed!!!")
+            if results == "Hit":
+                scores["player1"] = scores["player1"]+1
+            answer = make_guess(player1_board)
+            print(f"{computer_board.name} guessed: {player1_board.guesses[-1]}")
+            print(f"{computer_board.name} {answer}ed!!!")
 
     def new_game(self):
         """
