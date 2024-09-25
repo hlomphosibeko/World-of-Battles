@@ -34,6 +34,22 @@ class Board:
         """
         Processes the guesses. If it's a computer guess, it picks a random row and random column. It it's a player guess, it then prompts for input.
         """
+        x = None
+        y = None
+
+        if board.type == "computer":
+            while True:
+                x = ismynumber(x)
+                y = ismynumber(y)
+                
+                if (valid_coordinates(x, y, board)):
+                    break
+            return board.guess(x, y)
+        else:
+            x = random_point(5)
+            y = random_point(5)
+        board.guess(x, y)
+        return board.guess(x, y)
 
     def revelling(computer_board, player1_board):
         """
